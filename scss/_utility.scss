@@ -1,0 +1,12 @@
+@import "_config";
+.bg {
+  &-main {
+    background-color: $background-color;
+  }
+  &-header {
+    background-color: darken($color: $background-color, $amount: 20);
+  }
+  &-nav {
+    background-color: darken($color: $background-color, $amount: 10);
+  }
+}

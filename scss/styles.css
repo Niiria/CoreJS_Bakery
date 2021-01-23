@@ -1,0 +1,91 @@
+.bg-main {
+  background-color: #ffeee6;
+}
+.bg-header {
+  background-color: #ffa980;
+}
+.bg-nav {
+  background-color: #ffcbb3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  border-bottom: #ff4dff solid 1px;
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  border: black solid 1px;
+  margin-top: auto;
+  transition: ease-in background-color, cursor, 2s;
+}
+.header div * {
+  margin: 0 0.1em;
+}
+.header div:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: center;
+  border-bottom: #ff4dff solid 1px;
+}
+.nav p {
+  font-size: large;
+}
+.nav .nav-input {
+  margin-left: 0.5rem;
+  padding-left: 0.1rem;
+}
+.shop {
+  padding: 1rem;
+}
+.shop ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.shop ul .shop-container {
+  border: black solid 0.1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.shop ul .shop-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.shop ul .shop-container div {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 5fr 1fr;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: black solid 0.1rem;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+}
+.shop ul .shop-container div div {
+  display: flex;
+  border-top: none;
+  justify-content: center;
+}
+.shop ul .shop-container div div button {
+  margin: 0.1rem;
+  min-width: 30%;
+}
+.shop ul .shop-container div button {
+  text-align: center;
+}
